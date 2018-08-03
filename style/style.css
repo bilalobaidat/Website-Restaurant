@@ -1,0 +1,99 @@
+body {
+	background-color: #c2c5d6;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: justify;
+	color: #444;
+}
+
+.container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #888;
+}
+
+.content {
+    margin-top: 0px;
+	line-height: 24px;
+	padding: 25px;
+    padding-top: 0px;
+    font-size: 130%;
+}
+
+.content img {
+	float:right;
+	padding-left: 20px;
+	display:inline;
+}
+
+h1 {
+    margin-top: 10px;
+	font-size: 30px;
+	line-height: 1.5;
+	color: #602E8B;
+}
+
+hr {
+	border-top:1px solid #bbb;
+}
+
+td {
+	font-size: 16px;
+    line-height: 1.8;
+	text-align: left;
+    padding: 0px;
+}
+
+p {
+    margin-top:-25px;
+    line-height: 40px;
+}
+
+.Dish_Category {
+        font-weight: bold;
+        font-size: 200%;
+        line-height: 10px;
+        color: #278509;
+        background-color: #FF7759;
+}
+
+.Dish_Title {
+        font-weight: bold;
+        font-size: 170%;
+        color: #FF7D33;
+}
+
+.Dish_Description {
+        font-size: 130%;
+        color: #A7701B;
+}
+
+.Dish_Price {
+        font-weight: bold;
+        color: #336BFF;
+}
+
+.Vegetarian {
+        color: #01A82A;
+}
+
+.Carnivore {
+        color: #FC1502;
+}
+
+.Pescatarian {
+        color: #0209F3;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+	width: 100%;
+    }
+    
+    .current img {
+	width: 100%;
+    }
+}
