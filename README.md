@@ -1,1 +1,3 @@
-Link to live site: http://sehtain.co
+- A single page website for a rstaurant in Denver, Colorado.
+- Uses PHP, JavaScript, and Ajax to dynamically change the content of the page automatically and through the control pannel.
+- Link to live site: http://sehtain.co
