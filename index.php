@@ -2,27 +2,28 @@
 <html>
 <!------------------------------------------ Head --------------------------------------------------->
     <head>
-        <title>Sehtain</title>
+        <title>Nicole's</title>
         <link rel="stylesheet" href="style/style.css">
     </head>
 <!-------------------------------------- End of Head ------------------------------------------------>
    
 <!----------------------------------------- Body ----------------------------------------------------> 
-    <body>
+    <body background="Images/Back-Ground.jpg">
         <div class="container">
             <div class="header"><img src="Images/Header.png"></div>
-            <div class="current"><img src="Images/Home%20Page.JPG"></div>
+            <div class="current"><img src="Images/Home-Page.png"></div>
             
             <div class="content">
                 <div>
-                    <h1>Welcome to Sehtain Restaurant</h1>
+                    <h1 style="text-align:center;">Welcome to Nicole's Restaurant!</h1>
                     <p>an online restaurant and catering service. You can choose from the menu 
-                        below and call our number, then we will deliver. Order by calling: <b>(333) 333-3333</b></p>
+                        below and call our number, then we will deliver. Order at: <b>(763) 951-3950</b>
+                        or: <b>order@nicoles-cuisine.com</b></p>
                 </div>
 
                 <hr>
 
-                <h1>Menu</h1>
+                <h1 style="text-align:center;" id="Menu">Menu</h1>
                 <p>Our menu rotates once a month. Everyday has a different main dish. Click on the day to 
                     see its menu. Dishes ingredients are color coded. Green for <span class="Vegetarian">vegetables,
                     </span> red for <span class="Carnivore">meat,</span> and blue for 
@@ -33,10 +34,10 @@
 <!-- ========================================= PHP =============================================== --> 
                 <?php
               	
-              	//Set time zone to Denver, Colorado
-              	date_default_timezone_set('America/Denver');        
+              	//Set time zone to Minneapolis, Minnesota
+              	date_default_timezone_set('America/Chicago');        
                 //Week number of year, weeks starting on Monday. Example: 42 (the  42nd week in the year) http://php.net/manual/en/function.date.php. % 4 results in: 1, 2, 3, or 0
-                $Week = (date('W')+2) % 4;
+                $Week = (date('W')) % 4;
                 
                 if ($Week == "0") {
                     $Week = 4;
@@ -105,18 +106,15 @@
 // Takes 1 parameter, the week chosen, and changes the weeks images to show the active selection 
                     function changeWeek(choice) {
                         var clicked = document.getElementById(choice);
-                        // Changes the image's src attribute to correspond to the user's selection
-                        clicked.src = "Images/Days/" + choice + "_Active.png";
-                        // Changes the image's height into 65
-                        clicked.height = "65";
+                        clicked.className = "button Active";
+                        week = choice;
                         // Calls function changeDay() and passes the value "Mon" to it. This shows the image corresponding to Monday to be active and resets the rest to inactive
-                        changeDay("Mon")
+                        changeDay("Mon");
                         for (var i = 1; i <= 4; i++) {
                             var id = "W" + i;
-                            var imgId = document.getElementById(id);
+                            var btnId = document.getElementById(id);
                             if (id !== choice) {
-                                imgId.src = "Images/Days/W" + i + ".png";
-                                imgId.height = "60";
+                                btnId.className = "button " + id;
                             }
                         }
                     }
@@ -125,20 +123,16 @@
 // Takes 1 parameter, the day chosen, and changes the days images to show the active selection
                     function changeDay(choice) {
                         var clicked = document.getElementById(choice);
-                        // Changes the image's src attribute to correspond to the user's selection
-                        clicked.src = "Images/Days/" + choice + "_Active.jpg";
-                        // Changes the image's height into 75
-                        clicked.height = "75";
+                        clicked.className = "button Active";
                         // Shows the image corresponding to selection to be active and resets the rest to inactive
                         for (var i = 0; i < 7; i++) {
                             var imgId = document.getElementById(days[i]);
                             if (days[i] !== choice) {
-                                imgId.src = "Images/Days/" + days[i] + ".jpg";
-                                imgId.height = "60";
+                               imgId.className = "button " + days[i];
                             }
                         }
                     }
-
+                    
 //------------------------------------- Function showContent -----------------------------------------
 // Function to dynamically show content on page. Takes 2 parameters: Week and day
                     function showContent(week, day) {
