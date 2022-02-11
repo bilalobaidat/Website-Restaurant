@@ -1,0 +1,359 @@
+body {
+	background-color: gainsboro;
+	font-family: Papyrus, serif;
+	text-align: justify;
+	color: #444;
+}
+
+.container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1320px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #888;
+}
+
+.content {
+    margin-top: 0px;
+	line-height: 24px;
+	padding: 25px;
+    padding-top: 0px;
+    font-size: 130%;
+}
+
+.content img {
+	float:right;
+	padding-left: 20px;
+	display:inline;
+}
+
+h1 {
+    margin-top: 10px;
+	font-size: 50px;
+	line-height: 1.5;
+	color: #602E8B;
+}
+
+#Welcome {
+    text-align: center;
+}
+
+#Menu {
+    text-align: center;
+}
+
+hr {
+	border-top:1px solid #bbb;
+}
+
+td {
+	font-size: 16px;
+    line-height: 1.8;
+	text-align: left;
+    padding: 0px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top:-25px;
+    line-height: 40px;
+}
+
+#Main_Dishes {
+    text-align: center;
+}
+
+.Dish_Category {
+        font-weight: bold;
+        font-size: 200%;
+        line-height: 10px;
+        color: #F5FFFA;
+        background-color: #330066;
+}
+
+.Dish_Title {
+        font-weight: bold;
+        font-size: 170%;
+        color: #602E8B;
+}
+
+.Dish_Description {
+        font-size: 130%;
+        color: #000000;
+}
+
+.Dish_Price {
+        font-weight: bold;
+        color: #336BFF;
+}
+
+.Vegetarian {
+        color: #01A82A;
+}
+
+.Carnivore {
+        color: #FC1502;
+}
+
+.Pescatarian {
+        color: #0209F3;
+}
+
+.Calendar {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.Weeks {
+  padding: 10px 32px;
+  font-size: 38px;
+}
+
+.Days {
+  padding: 0px 32px;
+  font-size: 18px;
+}
+
+.button {
+  background-color: orange;
+  border: none;
+  color: #4CAF50;
+  padding: 26px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Papyrus, serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Week 1 */
+.W1 {
+  background-color: lightgreen; 
+  color: black;
+}
+
+.W1:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.W1:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Week 2 */
+.W2 {
+  background-color: #008CBA; 
+  color: black;
+}
+
+.W2:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.W2:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Week 3 */
+.W3 {
+  background-color: hotpink; 
+  color: black;
+}
+
+.W3:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.W3:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Week 4 */
+.W4 {
+  background-color: greenyellow;
+  color: black;
+}
+
+.W4:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.W4:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Monday */
+.Mon {
+  background-color: coral; 
+  color: black;
+}
+
+.Mon:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Mon:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Tuesday */
+.Tue {
+  background-color: #008CBA; 
+  color: black;
+}
+
+.Tue:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Tue:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Wednsday */
+.Wed {
+  background-color: hotpink; 
+  color: black;
+}
+
+.Wed:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Wed:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Thursday */
+.Thu {
+  background-color: greenyellow; 
+  color: black;
+}
+
+.Thu:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Thu:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Friday */
+.Fri {
+  background-color: orange; 
+  color: black;
+}
+
+.Fri:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Fri:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Saturday */
+.Sat {
+  background-color: blueviolet; 
+  color: black;
+}
+
+.Sat:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Sat:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+/* Sunday */
+.Sun {
+  background-color: #FFA07A; 
+  color: black;
+}
+
+.Sun:hover {
+  background-color: #602E8B;
+  color: white;
+}
+
+.Sun:focus {     
+  background-color:#602E8B;
+  box-shadow: 0 5px #602E8B;
+  transform: translateY(4px);
+  color: white;
+}
+
+.Active {
+  border: none;
+  padding: 26px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-family: Papyrus, serif;
+  margin: 4px 2px;
+  transition-duration: 1.4s;
+  cursor: pointer;
+  background-color:#602E8B;
+  box-shadow: 0 3px black;
+  transform: translateY(4px);
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+	width: 100%;
+    }
+
+    .current img {
+	width: 100%;
+    }
+}
